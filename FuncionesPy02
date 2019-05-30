@@ -1,8 +1,6 @@
 #Ejercicios con arreglos
 
 #sumar elementos de arreglo unidimensional
-aU=[1,2,3,4,5,6] #suma 21
-
 def sumarreglos1(arreglo):
     ns=0
     for i in range (len(arreglo)):
@@ -10,6 +8,7 @@ def sumarreglos1(arreglo):
     return ns
 
 #uso sumarreglos1
+aU=[1,2,3,4,5,6] #suma 21
 s=sumarreglos1(aU)
 print(s)
 
