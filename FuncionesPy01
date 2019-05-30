@@ -1,3 +1,5 @@
+#Ejercicios iniciales de funciones
+
 #suma 2 numeros
 def suma2(x,y):
     return x+y
