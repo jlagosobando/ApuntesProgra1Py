@@ -8,7 +8,6 @@ for e in range(len(aB)):
 f.close()
 print(aB)
 
-
 f=open("archivo.txt","r")
 
 aC=[[None,None,None],[None,None,None]]
