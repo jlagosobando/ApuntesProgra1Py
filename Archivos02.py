@@ -1,8 +1,5 @@
 aB=[[1,0,3],[6,4,5]]
 
-filas=len(aB)
-colum=len(aB[0])
-
 f=open("archivo.txt","w")
 
 for e in range(len(aB)):
