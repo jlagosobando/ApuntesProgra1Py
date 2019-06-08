@@ -14,8 +14,8 @@ f.close()
 print(aB)
 
 f=open("archivo.txt","r")
-col=int(f.readline().strip())
 fil=int(f.readline().strip())
+col=int(f.readline().strip())
 aC=[[None,None,None],[None,None,None]]
 
 for e in range(len(aC)):
@@ -25,8 +25,8 @@ print(aC)
 f.close()
 
 f=open("archivo.txt","r")
-col=int(f.readline().strip())
 fil=int(f.readline().strip())
-aD=[ [ int(f.readline().strip()) for y in range(fil) ] for x in range(col) ]
+col=int(f.readline().strip())
+aD=[ [ int(f.readline().strip()) for y in range(col) ] for x in range(fil) ]
 print(aD)
 f.close()
