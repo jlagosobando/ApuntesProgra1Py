@@ -1,4 +1,4 @@
-aB=[[1,0,3],[6,4,5]]
+aB=[[1,0,3],[6,4,2]]
 
 filas=len(aB)
 colum=len(aB[0])
@@ -22,6 +22,17 @@ for e in range(len(aC)):
     for i in range(len(aC[e])):
         aC[e][i]=int(f.readline().strip())
 print(aC)
+f.close()
+
+f=open("archivo.txt","r")
+fil=int(f.readline().strip())
+col=int(f.readline().strip())
+aE=[[None,None,None],[None,None,None]]
+
+for e in range(fil):
+    for i in range(col):
+        aE[e][i]=int(f.readline().strip())
+print(aE)
 f.close()
 
 f=open("archivo.txt","r")
