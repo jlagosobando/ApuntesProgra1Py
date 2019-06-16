@@ -1,0 +1,80 @@
+#dec a hex
+def dectohex(x):
+  letra={10:"A", 11:"B", 12:"C", 13:"D", 14:"E", 15:"F"}
+  hexa=""
+  while x!=0:
+    d=x%16
+    x=x//16
+    if d<10:
+      hexa=str(d)+hexa
+    else:
+      hexa=letra[d]+hexa
+  return hexa
+
+print(dectohex(13989))
+
+#hex a dec
+import math
+def hextodec(x):
+  x=str(x)
+  letra={"A":10, "B":11, "C":12, "D":13, "E":14, "F":15}
+  largo=len(x)
+  dec=0
+  exp=largo-1
+  for i in range(largo):
+    try:
+      d=int(x[i])
+    except:
+      d=letra[x[i]]
+    dec=dec+math.pow(16,exp)*d 
+    exp=exp-1
+  return int(dec)
+
+print(hextodec("154DD"))
+
+#dec to bin
+def dectobin(x):
+  bin=""
+  while x!=0:
+    d=x%2
+    x=x//2
+    bin=str(d)+bin
+  return bin
+
+print(dectobin(135))
+
+#bin to dec
+def bintodec(x):
+  x=str(x)
+  largo=len(x)
+  dec=0
+  exp=largo-1
+  for i in range(largo):
+    d=int(x[i])
+    dec=dec+math.pow(2,exp)*d 
+    exp=exp-1
+  return int(dec)
+
+print(bintodec(10000111))
+
+#bin to hex
+def bintohex(x):
+  return dectohex(bintodec(x))
+
+print(bintohex("111011"))
+
+#hex to bin
+def hextobin(x):
+  return dectobin(hextodec(x))
+
+print(hextobin("3B"))
+
+#contador de palabras
+frase = input("Ingrese una frase: ")
+palabras = frase.split() 
+counts = {}
+for p in palabras:
+    counts[p] = counts.get(p, 0) + 1
+
+print("El conteo de palabras de la frase es: ")   
+print(counts)
