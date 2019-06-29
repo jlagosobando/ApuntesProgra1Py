@@ -32,7 +32,7 @@ print(str(showord)+" vidas: "+str(lives))
 while(jugando==True):
   #jugador ingresa letra, revisa que sea solo una letra y se asegura que sea mayuscula
   letter = '' 
-  while ((len(letter)!=1) or (letter in used)):
+  while ((len(letter)!=1) or (letter in used)): #si se ingresa algo distinto a una letra o la letra ya se usó se sigue pidiendo letra
     letter = (input("Ingrese letra  ")).upper()
   #print(letter) #revisa como queda la letra recibida
   
