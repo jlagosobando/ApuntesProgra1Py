@@ -1,38 +1,32 @@
-#declaración variables iniciales
-cadena=-1
+#rut, d, m, f=2, s=0, res:entero
+#dv :texto
 f=2
-suma=0
+s=0
 
-#ingreso de datos
-while cadena<1:
-  ruto=input("rut sin dv ")
-  cadena=int(ruto)
+#Escribir "ingrese su rut sin dv"
+#Leer rut
+rut=(int)(input("rut sin dv "))
 
-#core
-while cadena>0:
-  dig=cadena%10
-  cadena=cadena//10
+#mientras
+while rut>0:
+  d=rut%10
+  rut=rut//10
 
-  m=dig*f
-  suma=suma+m
-  
+  m=d*f
   f=f+1
   if f>7:
     f=2
+  s=s+m
 
-suma=suma%11
-suma=11-suma
+s=s%11
+res=11-s
 
-if suma<10:
-  dv=suma
-elif suma==10:
+if res>=0 and res<=9:
+  dv=res
+
+if res==10:
   dv="k"
-elif suma==11:
-  dv=0
-else:
-  dv="algo raro pasó"
 
-#abrir archivo para escritura,  guarda rut
-f=open("archivo.txt","w")
-f.write(str(ruto)+"-"+str(dv))
-f.close()
+if res==11:
+  dv=0
+print("Su dv es: ",dv)
