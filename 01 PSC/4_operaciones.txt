@@ -1,0 +1,20 @@
+INICIO
+	numero1, numero2, resSuma, resResta, resMult, resDiv : DECIMAL
+
+	ESCRIBIR "Ingrese primer numero"
+	LEER numero1
+	ESCRIBIR "Ingrese segundo numero"
+	LEER numero2
+
+	resSuma=numero1+numero2
+	resResta=numero1-numero2
+	resMult=numero1*numero2
+	resDiv=numero1/numero2
+
+	ESCRIBIR "El resul. de la suma es", resSuma
+	ESCRIBIR "El resul. de la resta es", resResta
+	ESCRIBIR "El resul. de la multiplicación es", resMult
+	ESCRIBIR "El resul. de la división es", resDiv
+
+
+FIN

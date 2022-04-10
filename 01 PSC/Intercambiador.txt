@@ -1,0 +1,17 @@
+INICIO
+	a,b,aux : DECIMAL
+
+	ESCRIBIR "Ingrese el primer número"
+	LEER a
+	ESCRIBIR "Ingrese el segundo número"
+	LEER b
+
+	aux=a
+	a=b
+	b=aux
+	
+	ESCRIBIR "La var a vale =",a
+	ESCRIBIR "La var b vale =",b
+	
+FIN
+
