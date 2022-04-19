@@ -1,0 +1,11 @@
+INICIO
+	#dec. de variables
+	cms, pies :decimal
+	#entrada
+	Escribir "ingrese los cms que quiere convertir"
+	Leer cms
+	#proceso
+	pies = cms / 30.48
+	#salida
+	Escribir "el resultado de la conv es ", pies
+FIN
